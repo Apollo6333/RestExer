@@ -1,4 +1,4 @@
-
+//Nesta linha é onde se encontra a url do serviço chamado
 const apiUrl = 'https://viacep.com.br/ws/';
 
 const formCep = document.getElementById('formCep');
@@ -33,3 +33,7 @@ formCep.addEventListener('submit', (e) => {
             resultado.innerHTML = 'Erro ao consultar o CEP.';
         });
 });
+
+//O parametro usado pelo programa é o CEP
+//O serviço retorna com um Json, de onde se divide as informações para ficar legivel ao usuario
+//O serviço usado é o cep lookup, pode ser usado para autopreenchimento de um site, ou para calcular frete, no caso de empresas online
